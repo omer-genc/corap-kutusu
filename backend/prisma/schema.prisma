@@ -24,15 +24,53 @@ model User {
 }
 
 model Address {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-
-  User   User?   @relation(fields: [userId], references: [id])
-  userId String? @db.ObjectId
-
-  country String @default("Turkey")
+  id      String  @id @default(auto()) @map("_id") @db.ObjectId
+  User    User?   @relation(fields: [userId], references: [id])
+  userId  String? @db.ObjectId
+  country String  @default("Turkey")
   city    String
   town    String
   address String
 
-  @@map("Addresses")
+  @@map("addresses")
+}
+
+model Product {
+  id           String        @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  price        Float
+  types        ProductType[]
+  tag          ProductTag?   @relation(fields: [productTagId], references: [id])
+  productTagId String?       @db.ObjectId
+  stock        Float
+  isMain       Boolean?
+  Variant      Variant?      @relation(fields: [variantId], references: [id])
+  variantId    String?       @db.ObjectId
+
+  @@map("products")
+}
+
+model Variant {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  products Product[]
+
+  @@map("variants")
+}
+
+model ProductType {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  Product   Product? @relation(fields: [productId], references: [id])
+  productId String?  @db.ObjectId
+
+  @@map("types")
+}
+
+model ProductTag {
+  id      String    @id @default(auto()) @map("_id") @db.ObjectId
+  name    String
+  Product Product[]
+
+  @@map("tags")
 }

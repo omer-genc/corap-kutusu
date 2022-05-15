@@ -21,20 +21,9 @@ export class AuthService {
           ...dto,
           hash: hash,
         },
-        select: {
-          email: true,
-          createdAt: true,
-          updatedAt: true,
-          firstName: true,
-          lastName: true,
-          id: false,
-          hash: false,
-        },
       });
       return user;
     } catch (error) {
-      console.log(error);
-
       if (error instanceof PrismaClientKnownRequestError) {
         if ((error.code = 'P2002')) {
           throw new ForbiddenException('Credantial Taken');

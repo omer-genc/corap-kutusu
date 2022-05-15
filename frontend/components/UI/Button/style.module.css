@@ -1,0 +1,12 @@
+.base {
+  @apply text-white p-2 text-center
+  hover:bg-opacity-80;
+}
+
+.pink {
+  @apply bg-pink;
+}
+
+.green {
+  @apply bg-green;
+}
