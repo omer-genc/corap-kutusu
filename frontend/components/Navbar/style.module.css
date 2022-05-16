@@ -1,0 +1,11 @@
+.searchInput {
+  @apply p-2
+  flex-1
+  border-y-2 
+  border-l-2 
+  border-collapse 
+  border-pantone-purple;
+}
+.searchInput:focus {
+  @apply outline-none border-off-purple;
+}

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import Banner from '../components/Banner';
+import BigCarousel from '../components/BigCarousel';
 import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
 
       <Banner />
       <Navbar />
+      <BigCarousel />
     </div>
   );
 };

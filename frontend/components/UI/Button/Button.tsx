@@ -7,10 +7,17 @@ import style from './style.module.css';
 type Props = {
   children?: JSX.Element;
   variant?: string;
+  onClick?: () => void;
+  props?: any;
+  disabled?: boolean;
 };
-const Button: React.FC<Props> = ({ children, variant }) => {
+const Button: React.FC<Props> = ({ children, variant, props, disabled }) => {
   return (
-    <button className={cn(style.base, variant ? style[variant] : undefined)}>
+    <button
+      disabled={disabled}
+      {...props}
+      className={cn(style.base, variant ? style[variant] : undefined)}
+    >
       {children}
     </button>
   );

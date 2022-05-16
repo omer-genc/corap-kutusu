@@ -4,9 +4,9 @@
 }
 
 .pink {
-  @apply bg-pink;
+  @apply bg-pink disabled:bg-navy-blue;
 }
 
 .green {
-  @apply bg-green;
+  @apply bg-green disabled:text-off-purple;
 }
