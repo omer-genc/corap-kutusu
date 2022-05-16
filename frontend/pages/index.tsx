@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Banner from '../components/Banner';
 import BigCarousel from '../components/BigCarousel';
 import Navbar from '../components/Navbar';
+import FeaturedProducts from '../components/FeaturedProducts';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Banner />
       <Navbar />
       <BigCarousel />
+      <FeaturedProducts />
     </div>
   );
 };

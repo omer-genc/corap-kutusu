@@ -1,0 +1,9 @@
+.wrapper {
+  @apply w-72 
+  h-96 
+  bg-white 
+  shadow-2xl
+  border
+  border-pink
+  hover:text-white;
+}
