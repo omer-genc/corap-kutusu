@@ -23,6 +23,7 @@ module.exports = {
       'pantone-purple': '#e0cbf5',
       white: '#ffffff',
       green: '#1ef90e',
+      gray: '#8c8c8c',
     },
     fontFamily: {
       sans: ['Josefin Sans', 'sans-serif'],

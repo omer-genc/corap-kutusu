@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
 import Banner from '../components/Banner';
 import BigCarousel from '../components/BigCarousel';
@@ -8,6 +7,7 @@ import Navbar from '../components/Navbar';
 import FeaturedProducts from '../components/FeaturedProducts';
 import LeatestProducts from '../components/LeatestProducts';
 import ShopexOffer from '../components/ShopexOffer';
+import FeaturedProduct from '../components/FeaturedProduct';
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +24,7 @@ const Home: NextPage = () => {
       <FeaturedProducts />
       <LeatestProducts />
       <ShopexOffer />
+      <FeaturedProduct />
     </div>
   );
 };
