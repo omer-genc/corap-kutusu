@@ -6,6 +6,7 @@ import Banner from '../components/Banner';
 import BigCarousel from '../components/BigCarousel';
 import Navbar from '../components/Navbar';
 import FeaturedProducts from '../components/FeaturedProducts';
+import LeatestProducts from '../components/LeatestProducts';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Navbar />
       <BigCarousel />
       <FeaturedProducts />
+      <LeatestProducts />
     </div>
   );
 };

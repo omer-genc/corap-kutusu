@@ -15,7 +15,7 @@ const FeaturedProducts = () => {
     const calculateSlidesPerView = () => {
       if (innerWidth < 768) return 1;
       if (innerWidth < 976) return 2;
-      if (innerWidth < 1280) return 3;
+      if (innerWidth < 1440) return 3;
 
       return 4;
     };
@@ -37,7 +37,7 @@ const FeaturedProducts = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mt-8"
+        className="mt-8 h-[27rem]"
       >
         <SwiperSlide>
           <Product

@@ -4,6 +4,7 @@
   border-y-2 
   border-l-2 
   border-collapse 
+  w-full
   border-pantone-purple;
 }
 .searchInput:focus {
@@ -11,7 +12,7 @@
 }
 
 .wrapper {
-  @apply w-full h-24;
+  @apply w-full h-auto lg:h-24 py-4;
 }
 
 .nav {
@@ -26,16 +27,20 @@
 }
 
 .logo {
-  @apply text-5xl 
-  col-span-1;
+  @apply text-5xl
+  text-center 
+  lg:col-span-1
+  col-span-2;
 }
 
 .navList {
-  @apply flex 
-  gap-4 
-  col-span-7;
+  @apply hidden
+  lg:flex
+  lg:justify-evenly
+  lg:gap-4 
+  lg:col-span-7;
 }
 
 .search {
-  @apply ml-auto col-span-4 flex;
+  @apply ml-auto w-full col-span-10 lg:col-span-4 flex;
 }
