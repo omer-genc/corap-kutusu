@@ -23,7 +23,7 @@ const LeatestProducts = () => {
         </li>
       </ul>
 
-      <div className="container mt-8 flex flex-wrap gap-y-12 justify-center md:justify-between">
+      <div className="container mt-8 flex flex-wrap gap-y-16 justify-center md:justify-between">
         <Product
           variant="latest"
           product={{

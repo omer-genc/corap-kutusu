@@ -7,6 +7,7 @@ import BigCarousel from '../components/BigCarousel';
 import Navbar from '../components/Navbar';
 import FeaturedProducts from '../components/FeaturedProducts';
 import LeatestProducts from '../components/LeatestProducts';
+import ShopexOffer from '../components/ShopexOffer';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <BigCarousel />
       <FeaturedProducts />
       <LeatestProducts />
+      <ShopexOffer />
     </div>
   );
 };
