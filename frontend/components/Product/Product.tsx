@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../UI/Button';
 
 type Props = {
-  variant: 'featured' | 'latest';
+  variant: 'featured' | 'latest' | 'mini';
   product: {
     name: string;
     price: number;
@@ -67,6 +67,26 @@ const Product: React.FC<Props> = ({ variant, product }) => {
         <div className="mt-1 flex justify-between text-navy-blue font-sans">
           <span>{product.name}</span>
           <span>${product.price.toFixed(2)}</span>
+        </div>
+      </div>
+    );
+
+  if (variant === 'mini')
+    return (
+      <div className="mx-auto flex justify-start items-center gap-4">
+        <div className="">
+          <Image
+            src={product.image}
+            alt="slide 1"
+            objectFit="cover"
+            width={96}
+            height={96}
+            className="w-full h-full"
+          />
+        </div>
+        <div className="flex flex-col text-navy-blue">
+          <span>{product.name}</span>
+          <span>${product.price}</span>
         </div>
       </div>
     );

@@ -8,6 +8,7 @@ import FeaturedProducts from '../components/FeaturedProducts';
 import LeatestProducts from '../components/LeatestProducts';
 import ShopexOffer from '../components/ShopexOffer';
 import FeaturedProduct from '../components/FeaturedProduct';
+import TrendingProducts from '../components/TrendingProducts';
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <LeatestProducts />
       <ShopexOffer />
       <FeaturedProduct />
+      <TrendingProducts />
     </div>
   );
 };

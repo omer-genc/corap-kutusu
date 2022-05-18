@@ -26,7 +26,7 @@ const FeaturedProducts = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-28">
+    <div className="container mx-auto mt-32">
       <h2 className="text-4xl text-center font-bold text-navy-blue">
         Featured Products
       </h2>
@@ -37,7 +37,7 @@ const FeaturedProducts = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mt-8 h-[27rem]"
+        className="mt-12 h-[27rem]"
       >
         <SwiperSlide>
           <Product

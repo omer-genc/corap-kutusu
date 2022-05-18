@@ -5,8 +5,8 @@ import Button from '../UI/Button';
 const FeaturedProduct = () => {
   return (
     <div className="w-full mt-32 bg-sky-blue">
-      <div className="container h-[30rem] grid grid-cols-12 gap-8 mx-auto py-16">
-        <div className="col-start-4 col-span-3 bg-pink flex justify-end relative">
+      <div className="container xl:h-[30rem] grid grid-cols-12 grid-rows-2 gap-8 mx-auto py-16">
+        <div className="col-span-12 md:col-start-3 md:col-span-8 xl:col-start-4 xl:col-span-3 xl:row-span-2 flex justify-end relative">
           <Image
             src="https://picsum.photos/id/103/320/320"
             alt="slide 1"
@@ -15,7 +15,7 @@ const FeaturedProduct = () => {
             className="object-cover"
           />
         </div>
-        <div className="col-span-4  flex flex-col justify-between">
+        <div className="col-span-12 md:col-start-3 md:col-span-8 xl:col-span-4 xl:row-span-2  flex flex-col justify-between">
           <h1 className="text-3xl text-navy-blue font-bold">
             Unique Features Of Leatest & Trending Products
           </h1>
